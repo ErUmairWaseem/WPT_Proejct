@@ -67,7 +67,7 @@ body {
 
 .container form .fields {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -133,25 +133,25 @@ form button i {
   margin: 0 6px;
 }
 @media (max-width: 750px) {
-  .container form ::-webkit-scrollbar{
+  .container form ::-webkit-scrollbar {
     display: none;
   }
   form .fields .input-field {
     width: calc(100% / 2 - 15px);
   }
 }
-@media (max-width: 550px){
+@media (max-width: 550px) {
   form .fields .input-field {
     width: 100%;
   }
 }
 
-#phone{
+#phone {
   outline: 0;
 }
-#phone:valid {
+/* #phone:valid {
   border-color: green;
 }
-#phone:focus:invalid{
+#phone:invalid{
   border-color: red;
-}
+} */
