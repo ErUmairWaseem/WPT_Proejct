@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Responsive Registration Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>Registration</header>
+
+      <form action="#">
+        <div class="form first">
+          <div class="details personal">
+            <span class="title"> Personal Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Full name</label>
+                <input
+                  type="text"
+                  maxlength="12"
+                  minlength="5"
+                  placeholder="Enter Your Name"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Date of Birth</label>
+                <input
+                  type="date"
+                  min="01-12-1980"
+                  max="01-12-2004"
+                  placeholder="Enter date of Birth"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Your Email" required />
+              </div>
+              <div class="input-field">
+                <label> Mobile Number </label>
+                
+                  <input
+                    id="phone"
+                    type="tel"
+                    required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="xxx-xxx-xxxx"                   
+                  />
+                
+              </div>
+
+              <div class="input-field">
+                <label>Gender</label>
+                <input type="text" placeholder="Enter Your Gender" required />
+              </div>
+
+              <div class="input-field">
+                <label>Occupation</label>
+                <input
+                  type="text"
+                  placeholder="Enter Your Occupation"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="details ID">
+            <span class="title"> Identity Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Adhaar Number</label>
+                <input
+                  type="text"
+                  pattern="[0-9]{12}"
+                  placeholder="Enter Your Adhaar Number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Issued State</label>
+                <input type="number" placeholder="Enter State" required />
+              </div>
+
+              <div class="input-field">
+                <label>Issued Authority</label>
+                <input
+                  type="text"
+                  maxlength="12"
+                  minlength="12"
+                  placeholder="Enter Issued Authority"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label> Pan Number </label>
+                <input type="text" placeholder="Enter Pan Number" required />
+              </div>
+
+              <div class="input-field">
+                <label>Issued Date</label>
+                <input type="date" placeholder="Enter Issued Date" required />
+              </div>
+
+              <div class="input-field">
+                <label>Expiry Date</label>
+                <input type="date" placeholder="Enter Expiry Date" required />
+              </div>
+            </div>
+
+            <button class="nextBtn">
+              <span class="btntxt">Next</span>
+              <i class="uil uil-navigator"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="form second">
+          <div class="details personal">
+            <span class="title"> Address Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Address Type</label>
+                <input type="text" placeholder="Enter Address Type" required />
+              </div>
+
+              <div class="input-field">
+                <label>Nationality</label>
+                <input type="text" placeholder="Enter Nationality" required />
+              </div>
+
+              <div class="input-field">
+                <label>State</label>
+                <input type="text" placeholder="Enter Your State" required />
+              </div>
+              <div class="input-field">
+                <label> District </label>
+                <input
+                  type="number"
+                  placeholder="Enter Your District"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Block</label>
+                <input type="text" placeholder="Enter Your Block" required />
+              </div>
+
+              <div class="input-field">
+                <label>Village/Town</label>
+                <input
+                  type="text"
+                  placeholder="Enter Your Village/Town"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="Family Details">
+            <span class="title"> Family Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Father Name</label>
+                <input type="text" placeholder="Enter Father's Name" required />
+              </div>
+
+              <div class="input-field">
+                <label>Mother Name</label>
+                <input type="text" placeholder="Enter Mother's Name" required />
+              </div>
+
+              <div class="input-field">
+                <label>Mobile Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter Mobile Number"
+                  required
+                />
+              </div>
+            </div>
+
+            <button class="nextBtn">
+              <span class="btntxt">Next</span>
+              <!-- <i class="uil uil-navigator"></i> -->
+            </button>
+          </div>
+        </div>
+      </form>
+      <div>resume at 22:00</div>
+    </div>
+  </body>
+</html>
