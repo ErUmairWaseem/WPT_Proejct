@@ -88,7 +88,19 @@
                 />
               </div>
 
-              <div class="details ID">
+              <div class="input-field">
+                <label>PAN Number</label>
+                <input
+                  type="text"
+                  pattern="([A-Z]){5}([0-9]){4}([A-Z]){1}"
+                  maxlength="10"
+                  minlength="10"
+                  placeholder="AAAAA1234A"
+                  required
+                />
+              </div>
+
+              <!-- <div class="details ID">
                 <span class="title"> Address Details</span>
 
                 <div class="fields">
@@ -103,11 +115,9 @@
                   </div>
                 </div>
 
-                <button class="nextBtn">
-                  <span class="btntxt">Next</span>
-                  <i class="uil uil-navigator"></i>
-                </button>
-              </div>
+                
+              </div> -->
+              
               <!-- <div class="input-field">
                 <label>PAN Number</label>
                 <input
@@ -122,6 +132,10 @@
             </div>
           </div>
         </div>
+        <button class="nextBtn">
+          <span class="btntxt">Next</span>
+          <i class="uil uil-navigator"></i>
+        </button>
       </form>
     </div>
 
