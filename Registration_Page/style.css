@@ -23,6 +23,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Registration word */
 .container header {
   position: relative;
   font-size: 20px;
@@ -30,6 +31,7 @@ body {
   color: #333;
 }
 
+/* blue line blow Registration */
 .container header::before {
   content: "";
   position: absolute;
