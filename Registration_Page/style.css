@@ -149,9 +149,23 @@ form button i {
 #phone {
   outline: 0;
 }
-/* #phone:valid {
-  border-color: green;
+
+.input-field {
+  margin-bottom: 20px;
 }
-#phone:invalid{
-  border-color: red;
-} */
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field input[type="password"] {
+  width: 270px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: rgb(255, 123, 0);
+}

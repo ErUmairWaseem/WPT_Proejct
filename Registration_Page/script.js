@@ -20,6 +20,25 @@ fullNameInput.addEventListener('input', function() {
   }
 });
 
+// For password validation
+
+var passwordInput = document.getElementById('password');
+var confirmPasswordInput = document.getElementById('confirmPassword');
+var passwordError = document.getElementById('passwordError');
+
+function validatePassword() {
+  if (passwordInput.value !== confirmPasswordInput.value) {
+    passwordError.textContent = "Passwords does not match";
+    confirmPasswordInput.setCustomValidity("Passwords does not match");
+  } else {
+    passwordError.textContent = "";
+    confirmPasswordInput.setCustomValidity("");
+  }
+}
+
+passwordInput.addEventListener('input', validatePassword);
+confirmPasswordInput.addEventListener('input', validatePassword);
+
 
 
 
